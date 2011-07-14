@@ -6,7 +6,7 @@ It gives you the lib with Captcha class and the module to secure your symfony fo
 
 ## Installation ##
 
-### Install the plugin for sf 1.2 ###
+### Install the plugin for sf >= 1.2 ###
   
     php symfony plugin:install sfCaptchaGDPlugin
 
