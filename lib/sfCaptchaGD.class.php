@@ -65,7 +65,7 @@ class sfCaptchaGD
   {
     $context = sfContext::getInstance();
     $l = $context->getLogger();
-    if ($context->getRequest()->getGetParameter('reload') || ! $securityCode){
+    if ($context->getRequest()->getGetParameter('reload') || ! $securityCode || sfConfig::get('app_sf_captchagd_force_new_captcha', false)){
       $this->securityCode = $this->simpleRandString($this->codeLength, $this->chars);
     } else {
       $this->securityCode = $securityCode;

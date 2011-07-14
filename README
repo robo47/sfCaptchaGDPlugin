@@ -76,6 +76,7 @@ These options are default for captcha, you can change any of them, putting in se
             chars:                      "123456789" # possible chars in captcha
             length:                     4 # length of captcha
             font_size:                  18 # font size
+            force_new_captcha:          false # if true - captcha regenerated EVERY request, even if user input true value before
             
             # possible chars colors
             font_color:                 ["252525", "8b8787", "550707", "3526E6", "88531E"]
