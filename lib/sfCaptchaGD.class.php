@@ -121,7 +121,6 @@ class sfCaptchaGD
     $context->getResponse()->setContentType('image/gif');
     imagegif($this->img);
     imagedestroy($this->img);
-    $context->getResponse()->send();
   }
 }
 ?>
